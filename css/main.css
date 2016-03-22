@@ -487,6 +487,11 @@ canvas {
     margin: 0;
 }
 
+.activity-icon {
+    width: 16px;
+    height: 16px;
+}
+
 .right-arrow {
     width: 15px;
     height: 15px;

@@ -179,7 +179,7 @@ $messageButton.click(function(event) {
     }
     $messageHolder.show();
     $messageHolder.delay(2000).fadeOut();
-    console.log("You clicked the send button")
+    console.log("You clicked the send button");
 });
 
 //Exit button functionality
@@ -191,20 +191,23 @@ $exitButton.click(function() {
 
 /****************Member Search AutoComplete**********/
 var userList = [
-    {value: 'Lexy Lee', data: 'LL'},
-    {value: 'Jad Limcaco', data: 'JL'},
-    {value: 'Dan Benoni', data: 'DB'},
-    {value: 'Ian Ben', data: 'IB'},
-    {value: 'Adam Vargas', data: 'AV'},
-    {value: 'Mary Giovanetti', data: 'MG'},
-    {value: 'Matt Lozano', data: 'ML'},
-    {value: 'Megan Espinoza', data: 'ME'},
-    {value: 'Andrea Martinez', data: 'AM'},
-    {value: 'Pablo Gonzales', data: 'PG'}
-]
+    {value: 'Lexy Lee', data: 'lexy.lee@example.com'},
+    {value: 'Jad Limcaco', data: 'jad.limcaco@example.com'},
+    {value: 'Dan Benoni', data: 'jad.limcaco@example.com'},
+    {value: 'Ian Ben', data: 'ian.ben@example.com'},
+    {value: 'Adam Vargas', data: 'adam.vargas@example.com'},
+    {value: 'Mary Giovanetti', data: 'mary.giovanetti@example.com'},
+    {value: 'Matt Lozano', data: 'matt.lozano@example.com'},
+    {value: 'Megan Espinoza', data: 'megan.espinoza@example.com'},
+    {value: 'Andrea Martinez', data: 'andrea.martinez@example.com'},
+    {value: 'Pablo Gonzales', data: 'pablo.gonzales@example.com'}
+];
 
 $userSearch.autocomplete({
-    lookup: userList
+    lookup: userList,
+    formatResult: function(suggestion, currentValue) {
+        return suggestion.value + ', ' + suggestion.data;
+    }
 });
 
 /**********Notifications Menu********/

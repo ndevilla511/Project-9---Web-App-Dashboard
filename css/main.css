@@ -45,8 +45,12 @@ canvas {
     height: auto !important;
 }
 
-.move-over {
+.move-over-body {
     position: relative;
+    left: 304px;
+}
+
+.move-over-header {
     left: 304px;
 }
 

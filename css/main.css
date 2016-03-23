@@ -47,11 +47,11 @@ canvas {
 
 .move-over-body {
     position: relative;
-    left: 304px;
+    left: 275px;
 }
 
 .move-over-header {
-    left: 304px;
+    left: 275px;
 }
 
 .mobile-menu-on {
@@ -69,17 +69,16 @@ canvas {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     position: fixed;
-    background: #369;
-    padding: 20px 20px 20px 0;
+    background: transparent;
+    padding: 20px 20px 20px 15px;
     top: 0;
-    left: -304px;
+    left: -275px;
 }
 
 #notifications {
     margin-right: 20px;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 25px 5px 0px;
     border-right: 1px solid #4592d7;
 }
 
@@ -102,13 +101,14 @@ canvas {
 #side-nav {
     display: block;
     position: fixed;
-    top: 95px;
-    left: -304px;
+    top: 0;
+    left: -275px;
     height: 100%;
-    width: 304px;
+    width: 275px;
     z-index: -1;
     text-align: left;
     background-color: #369;
+    padding-top: 65px;
 }
 
 #side-nav span {
@@ -414,7 +414,8 @@ canvas {
 }
 
 #profilethumb {
-    width: 50px;
+    width: 36px;
+    height: 36px;
 }
 
 .icon-container,
@@ -498,6 +499,7 @@ canvas {
 }
 
 .right-arrow {
+    min-width: 15px;
     width: 15px;
     height: 15px;
     fill: #1b1b37;
@@ -729,14 +731,9 @@ canvas {
         display: none;
     }
 
-    #profilethumb {
-        width: 36px;
-        height: 36px;
-    }
-
     #main-nav {
         position: static;
-        background-color: #4592d7;
+        background-color: transparent;
         padding: 0 20px 0 0;
     }
 
@@ -755,6 +752,7 @@ canvas {
         width: 90px;
         top: 64px;
         left: 0px;
+        padding-top: 0px;
     }
 
     #side-nav span {

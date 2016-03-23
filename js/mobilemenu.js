@@ -15,7 +15,8 @@ $navicon.click(function() {
 
 $(window).resize(function() {
     if ($(window).width() > 1024 && $sideNav.hasClass('mobile-menu-on')) {
-        $body.removeClass('move-over');
+        $body.removeClass('move-over-body');
+        $mainHeader.removeClass('move-over-header')
         $mainNav.removeClass('mobile-menu-on');
         $sideNav.removeClass('mobile-menu-on');
         $navicon.removeClass('exit-mobile');

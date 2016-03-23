@@ -335,7 +335,6 @@ canvas {
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
-    position: fixed;
 }
 
 .bell {

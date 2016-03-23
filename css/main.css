@@ -102,9 +102,9 @@ canvas {
     display: block;
     position: fixed;
     top: 0;
-    left: -325px;
+    left: -320px;
     height: 100%;
-    width: 325px;
+    width: 320px;
     z-index: -1;
     text-align: left;
     background-color: #369;

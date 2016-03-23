@@ -6,8 +6,8 @@ var $mainHeader = $('#main-header')
 
 $navicon.click(function() {
     console.log("you are clicking the navicon");
-    $body.toggleClass('move-over');
-    $mainHeader.toggleClass('move-over');
+    $body.toggleClass('move-over-body');
+    $mainHeader.toggleClass('move-over-header');
     $mainNav.toggleClass('mobile-menu-on');
     $sideNav.toggleClass('mobile-menu-on');
     $navicon.toggleClass('exit-mobile');

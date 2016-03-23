@@ -253,14 +253,12 @@ canvas {
 
 #social-stats-widget {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .stats-container {
     min-width: 240px;
-    width: 47%;
+    width: 100%;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #fafafa;
@@ -649,6 +647,22 @@ canvas {
 /* =================================
   Media Queries
 ==================================== */
+
+@media (min-width: 321px) {
+
+    #social-stats-widget {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .stats-container {
+        width: 47%;
+    }
+
+}
+
+
 
 @media (min-width: 768px) {
 

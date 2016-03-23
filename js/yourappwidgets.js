@@ -230,7 +230,7 @@ var $timeZone = $('#time-zone');
 var $settingsForm = $('#settings-form');
 
 var $savedMessage = $('<span>Your settings have been saved!</span>');
-var $canceledMessage = $('<span>Your settings have been reverted to their previous state.</span>');
+var $canceledMessage = $('<span>Your settings have been reverted to their previous saved state.</span>');
 
 $settingsForm.submit(function(event) {
     event.preventDefault();

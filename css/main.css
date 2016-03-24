@@ -102,9 +102,9 @@ canvas {
     display: block;
     position: fixed;
     top: 0;
-    left: -275px;
-    height: 100vh;
-    width: 275px;
+    left: -320px;
+    height: 100%;
+    width: 320px;
     z-index: -1;
     text-align: left;
     background-color: #369;
@@ -280,7 +280,11 @@ canvas {
     display: flex;
     align-items: center;
     margin: .7em 0 .7em 0;
-    padding: 15px;
+    padding: 15px 0 15px 0;
+}
+
+.new-member-container {
+    flex-wrap: wrap;
 }
 
 #new-members-widget > div:nth-child(-n+4),
@@ -468,9 +472,12 @@ canvas {
     width: 40px;
 }
 
-.new-member-container > span {
+.new-member-date {
     margin-left: auto;
+    text-align: right;
     font-size: .9em;
+    order: -1;
+    width: 100%;
 }
 
 .member-info span {
@@ -658,6 +665,14 @@ canvas {
 
     .stats-container {
         width: 47%;
+    }
+
+    .new-member-container {
+        flex-wrap: nowrap;
+    }
+    .new-member-date {
+        width: auto;
+        order: 0;
     }
 
 }
